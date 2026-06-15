@@ -50,7 +50,7 @@ const mensagem = `📋 *RELATÓRIO OFICIAL - ZONA VERDE CE*
 
 🔥 *PROGRAMA FEVO*
 
-✅ Presença: ${presencaFevo.checked ? "Sim" : "Não"}
+👥 Presenças FEVO: ${presencaFevo.value}
 ✅ Visitou: ${visitou.checked ? "Sim" : "Não"}
 ✅ Evangelizou: ${evangelizou.checked ? "Sim" : "Não"}
 ✅ Follow Up: ${followup.checked ? "Sim" : "Não"}
