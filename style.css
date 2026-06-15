@@ -1,0 +1,200 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800&display=swap');
+
+*{
+margin:0;
+padding:0;
+box-sizing:border-box;
+font-family:'Poppins',sans-serif;
+}
+
+:root{
+--blue:#0057B8;
+--gold:#D4AF37;
+--dark:#081120;
+--white:#fff;
+--green:#25D366;
+}
+
+body{
+background:#081120;
+min-height:100vh;
+padding:20px;
+}
+
+.bg{
+position:fixed;
+inset:0;
+background:
+radial-gradient(circle at top left,#0057B850,transparent),
+radial-gradient(circle at bottom right,#D4AF3750,transparent);
+z-index:-1;
+}
+
+.container{
+max-width:700px;
+margin:auto;
+}
+
+.header{
+background:linear-gradient(135deg,#0057B8,#003A7A,#D4AF37);
+padding:30px;
+border-radius:25px;
+text-align:center;
+color:white;
+box-shadow:0 15px 40px rgba(0,0,0,.3);
+}
+
+.logo{
+width:150px;
+height:auto;
+display:block;
+margin:0 auto 15px;
+background:#fff;
+padding:6px;
+border-radius:10px;
+}
+.header h1{
+font-size:32px;
+font-weight:800;
+}
+
+.header h2{
+font-size:22px;
+margin-bottom:10px;
+}
+
+.progress{
+height:10px;
+background:#ffffff40;
+border-radius:50px;
+overflow:hidden;
+margin-top:20px;
+}
+
+#progressBar{
+height:100%;
+width:0;
+background:white;
+transition:.4s;
+}
+
+.card{
+background:rgba(255,255,255,.08);
+backdrop-filter:blur(15px);
+padding:25px;
+margin-top:20px;
+border-radius:20px;
+border:1px solid rgba(255,255,255,.1);
+}
+
+.card h3{
+color:#FFD700;
+margin-bottom:15px;
+}
+
+.card input{
+width:100%;
+padding:15px;
+margin-bottom:12px;
+border:none;
+border-radius:12px;
+font-size:16px;
+}
+
+.card label{
+display:flex;
+gap:10px;
+color:white;
+margin-bottom:10px;
+}
+
+.btn{
+width:100%;
+margin-top:20px;
+padding:18px;
+border:none;
+border-radius:15px;
+background:linear-gradient(135deg,#25D366,#128C7E);
+color:white;
+font-size:18px;
+font-weight:700;
+cursor:pointer;
+}
+
+.btn:hover{
+transform:translateY(-2px);
+}
+
+@media(max-width:768px){
+
+.header{
+padding:20px;
+}
+
+.header h1{
+font-size:24px;
+}
+
+.header h2{
+font-size:18px;
+}
+
+.logo{
+max-width:250px;
+}
+
+}
+
+.fevo-grid{
+    display:grid;
+    grid-template-columns:repeat(2,1fr);
+    gap:15px;
+    margin-bottom:20px;
+}
+
+.check-card{
+    background:rgba(255,255,255,.08);
+    border:1px solid rgba(255,255,255,.15);
+    border-radius:15px;
+    padding:15px;
+    display:flex;
+    align-items:center;
+    gap:10px;
+    cursor:pointer;
+    transition:.3s;
+}
+
+.check-card:hover{
+    transform:translateY(-3px);
+    border-color:#FFD700;
+}
+
+.check-card input{
+    width:20px;
+    height:20px;
+    accent-color:#FFD700;
+}
+
+.check-card span{
+    color:white;
+    font-weight:600;
+}
+
+.input-group{
+    margin-top:15px;
+}
+
+.input-group label{
+    display:block;
+    margin-bottom:10px;
+    color:#FFD700;
+    font-weight:600;
+}
+
+@media(max-width:768px){
+
+    .fevo-grid{
+        grid-template-columns:1fr;
+    }
+
+}
